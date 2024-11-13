@@ -1,3 +1,21 @@
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBYSLvV4yh5fzn_y9gV7E2kz5DixC_JL4Y",
+  authDomain: "todoapp-207a6.firebaseapp.com",
+  projectId: "todoapp-207a6",
+  storageBucket: "todoapp-207a6.firebasestorage.app",
+  messagingSenderId: "900962501973",
+  appId: "1:900962501973:web:882f979eebc29af4429bdc",
+  measurementId: "G-4HQ8SXPBP9"
+};
+
+
+
+// Initialize Firebase
+var app = firebase.initializeApp(firebaseConfig);
+
+var list = document.getElementById("list");
+
 var ulElement = document.getElementById("list");
 
 function addTodo() {
@@ -53,5 +71,3 @@ function editSingleTodo(e) {
 
   e.parentNode.firstChild.nodeValue = updateVal;
 }
-
-
